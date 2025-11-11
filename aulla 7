@@ -1,0 +1,25 @@
+número_1= int(input("Qual o seu primeiro número: "))                         
+número_2= int(input("Qual o seu segundo número: "))
+esccolha = int(input("1 - par \n2 - impar \nEscolha a opção"))
+print()
+
+if esccolha == 1:
+   print("Os números pares são: ")
+   print()
+elif esccolha == 2:
+   print("Os números impares são: ")
+   print()
+ 
+
+
+for resultado in range (número_1,número_2+1):
+    if esccolha == 1:
+       if resultado % 2 == 0:
+         print(resultado, end=' ')
+    elif esccolha == 2:
+       if resultado % 2 == 1:  
+         print(resultado, end=' ')
+    else:
+       print('Opção inválida')
+       break
+      
