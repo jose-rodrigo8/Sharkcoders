@@ -1,0 +1,18 @@
+inicio = int(input("Qual o primeiro valor? "))
+final = int(input("Qual o numero que quer ir " ))
+soma = 0
+
+print("\nOs valores somados são: ")
+for valor in range(inicio,final+1):
+    soma += valor 
+    if valor == inicio :
+      print(f"[ {valor}", end=" + ")
+    elif valor == final:
+      print(valor, end=" ]")
+    else:
+      print(valor, end=" + ")
+
+
+print()
+print(f'\nA soma de todos os valores de {inicio} até {final} é {soma}')
+
