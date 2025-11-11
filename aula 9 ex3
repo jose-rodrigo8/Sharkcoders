@@ -1,0 +1,9 @@
+nuero = int(input("\nEntre com o núero desejado: "))
+print()
+
+for multiplicador in range(1,11):
+    resultado = nuero * multiplicador
+    print(f"{nuero} x {multiplicador} = {resultado}")
+
+print()
+input("Enter para terminar")
