@@ -1,0 +1,56 @@
+def soma():
+    resultado = primeiroValor + segundovaolr
+    return resultado
+
+def subtração():
+    resultado = primeiroValor - segundovaolr
+    return resultado
+
+def divisão():
+    resultado = primeiroValor / segundovaolr
+    return resultado
+
+def multiplicação():
+    resultado = primeiroValor * segundovaolr
+    return resultado
+
+def cabeçalho(texto):
+    print()
+    print("="*17)
+    print(f"|| {texto} ||")
+    print("="*17)
+    print()
+
+def Calculadora():
+    global primeiroValor
+    global segundovaolr
+
+    while True:
+        cabeçalho("Calculadora")
+        print('1 - soma\n2 - subtrair\n3 - dividir\n4 - multiplicar\n0 - sair')
+        print()
+        escolha = int(input("Qual sua escolha? "))
+        print()
+        if escolha==0:
+            break
+        else:
+            primeiroValor = float(input("Entre com o valor A: "))
+            segundovaolr = float(input("Entre com o valor B: "))
+            if escolha == 1:
+                resultado = soma()
+            elif escolha == 2:
+                resultado = subtração()
+            elif escolha == 3:
+                if segundovaolr !=0.0:
+                    resultado = divisão()
+                else:
+                    print("\nO segundo valor tem de ser de 0.\n")
+                    input("\nEnter para terminar.")
+                    return       
+            elif escolha == 4:
+                resultado = multiplicação()
+
+        print(f"O resultado da conta é {resultado:.2f}")
+        input("\nEnter para terminar")
+
+Calculadora()

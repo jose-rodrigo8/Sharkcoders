@@ -1,0 +1,50 @@
+import random
+
+numerosorteados = []
+NumerosPares = []
+somaPares = 0
+soma = 0
+
+
+
+def gerador():
+
+    for i in range(1,11):
+        numero = random.randint(1,100)
+        numerosorteados.append(numero)
+
+    print(f"OS 10 numeros foram: {numerosorteados}")
+    print()
+
+def SomaDosNumerosPares():
+    global somaPares
+
+    for numero in numerosorteados:
+        if numero % 2 == 0:
+            NumerosPares.append(numero)
+            somaPares += numero 
+
+    print(f"Os numeros pares sao {NumerosPares}")
+    print()
+    print(f"A soma dos valores pares para coontidos na lista {numerosorteados} é {somaPares}")
+    print()
+
+def SomaTodosNumeros():
+    global soma 
+    for numero in numerosorteados:
+        soma += numero
+    
+    soma += somaPares
+
+    
+    print(f"Os numeros são {numerosorteados}")
+    print()
+    print(f"Os numeros pares são {NumerosPares}")
+    print()
+    print(f"A soma de todos os valorres das duas listas é {soma}")
+    print()
+
+
+gerador()
+SomaDosNumerosPares()
+SomaTodosNumeros()

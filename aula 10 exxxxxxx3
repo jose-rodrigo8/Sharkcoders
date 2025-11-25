@@ -1,0 +1,13 @@
+soma = 0
+def acharletra():
+    global soma
+    frase = input("Digite a frase")
+    letra = input("Que letra? ")
+    for x in frase:
+        if  x == letra:
+          soma += 1
+
+    print(f"Nesta fraseaparece {soma} vezes a letra ({letra})")
+
+for x in range(1,6):
+    acharletra() 

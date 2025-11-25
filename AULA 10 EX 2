@@ -1,0 +1,12 @@
+def AcharLetra():
+    FRASE = input("Qual frase deseja dizer? ")
+    Letra = input("Que letra deseja encontrar na frase")
+
+    if Letra in FRASE:
+        print(f"Existe letra {Letra}")
+    else:
+        print(f"Não existe letra {Letra}") 
+
+AcharLetra() 
+
+
