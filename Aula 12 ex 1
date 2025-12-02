@@ -1,0 +1,12 @@
+from math import pi
+
+def area_do_circulo():
+
+    raio=int(input("Qual o raio do circulo "))
+    area = pi * (raio ** 2)
+    print(f"A area do circulo não é {raio} mas é {area}")
+
+area_do_circulo()
+
+
+    

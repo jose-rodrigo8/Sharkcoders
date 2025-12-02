@@ -1,0 +1,24 @@
+from random import randint
+
+def Dadososososo():
+    
+    dadoum=0
+    dadodois=0
+    contador = 0
+    while True:
+      contador += 1
+      dadoum = randint (1,6)
+      dadodois = randint (1,6)
+      
+      if dadoum == 6:
+         if dadodois==6:
+            print(f"Os dois dados calharam 6 em {contador} vezes")
+            break
+
+
+Dadososososo()   
+
+         
+
+    
+    

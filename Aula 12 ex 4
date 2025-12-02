@@ -1,0 +1,15 @@
+from datetime import date
+ano = date.today().year
+
+def militar():
+    global ano
+    ano_de_nasciment= int(input("Quando nasceste em que ano "))
+    quantos_anos_tienes= ano - ano_de_nasciment
+    if quantos_anos_tienes > 18:
+        print("Já passou o prrazo")
+    elif quantos_anos_tienes == 18:
+        print("Está no momento")
+    elif quantos_anos_tienes < 18:
+        print("Ainda está muito cedo")
+
+militar()

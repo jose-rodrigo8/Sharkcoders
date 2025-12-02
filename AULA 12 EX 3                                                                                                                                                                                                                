@@ -1,0 +1,19 @@
+from random import randint
+
+def casino():
+   numero = randint(0,100)
+
+   while True:
+         adivinhe = int(input("Qual o numero burro "))
+         if numero == adivinhe:
+              print("Acertaste ") 
+              break
+
+         elif numero < adivinhe:
+              print("É menor")
+
+         elif numero > adivinhe:
+              print ("É maior")
+
+
+casino()
