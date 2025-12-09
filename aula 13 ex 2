@@ -1,0 +1,35 @@
+from random import randint
+vidaUm = 100
+VidaDois = 100
+
+def Luta():
+    global vidaUm
+    global VidaDois
+    while True:
+        socoUm = randint(1,101)
+        socoDois = randint(1,101)
+        if vidaUm and VidaDois > 0:
+           vidaUm -= socoDois
+           print(f"O lutador B recebeu um dano de {socoDois} e ficou com vida {vidaUm}")
+           print()
+        if vidaUm > 0:
+           VidaDois -= socoUm
+           print(f"O lutador A recebeu um dano de {socoUm} e ficou com vida {VidaDois} ")
+           print()
+        elif vidaUm <= 0:
+           print("O lutador A ganhou ")
+           break
+        else:
+           print("O lutador B ganhou ")
+           break
+
+Luta()
+           
+
+
+
+
+
+
+
+     
