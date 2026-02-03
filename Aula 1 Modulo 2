@@ -1,0 +1,16 @@
+from tkinter import *
+
+manel = Tk()
+
+manel.title("Alfredo")
+
+manel.geometry("1500x600+10+100")
+
+manel.wm_resizable(width=True,height=True)
+
+manel.mainloop()
+
+
+
+
+
